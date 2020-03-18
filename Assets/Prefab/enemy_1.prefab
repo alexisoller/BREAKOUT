@@ -107,4 +107,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   block: {fileID: 1339016116808667976, guid: 2ca9dac4dbd939e46aeaea4ee6b940e7, type: 3}
+  particles: {fileID: 603880550398412606, guid: 794a9f079dd94d6449281529e4dab550,
+    type: 3}
   audio: {fileID: 8300000, guid: 9b39dc2258b5bdd4cbec6698eff4f5ab, type: 3}

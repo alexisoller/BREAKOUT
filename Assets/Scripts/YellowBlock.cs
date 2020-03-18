@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class YellowBlock : MonoBehaviour{
     TextMesh count_live;
     public AudioClip audio;
+    public GameObject particles;
     private int touches = 2;
     void Start(){
        
@@ -21,6 +22,8 @@ public class YellowBlock : MonoBehaviour{
         count_live.text = touches.ToString();
 
         if (touches == 0){
+            GameObject firework = Instantiate(particles, this.transform.position, Quaternion.identity);
+            firework.GetComponent<ParticleSystem>().Play();
             AudioSource.PlayClipAtPoint(audio, this.gameObject.transform.position);
             Destroy(gameObject);
             LevelManager.numInitialBlocks--;
