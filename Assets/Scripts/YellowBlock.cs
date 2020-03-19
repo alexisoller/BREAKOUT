@@ -7,7 +7,13 @@ public class YellowBlock : MonoBehaviour{
     TextMesh count_live;
     public AudioClip audio;
     public GameObject particles;
+    public GameObject block;
+
+
+
     private int touches = 2;
+    private int randomDrop;
+
     void Start(){
        
         count_live = this.GetComponentInChildren<TextMesh>();
@@ -24,6 +30,15 @@ public class YellowBlock : MonoBehaviour{
         if (touches == 0){
             GameObject firework = Instantiate(particles, this.transform.position, Quaternion.identity);
             firework.GetComponent<ParticleSystem>().Play();
+
+            randomDrop = Random.Range(1, 20);
+
+            if (randomDrop == 19)
+            {
+                GameObject bulletInstance = Instantiate(block, this.transform.position, Quaternion.identity);
+                bulletInstance.GetComponent<Rigidbody>().AddForce(0.0f, 0.0f, -1.5f, ForceMode.Impulse);
+            }
+
             AudioSource.PlayClipAtPoint(audio, this.gameObject.transform.position);
             Destroy(gameObject);
             LevelManager.numInitialBlocks--;

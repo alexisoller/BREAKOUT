@@ -7,6 +7,8 @@ public class RedBlock : MonoBehaviour{
     public GameObject block;
     public GameObject particles;
     public AudioClip audio;
+    private int randomDrop;
+
     void Start(){
         LevelManager.numInitialBlocks++;
         
@@ -21,8 +23,13 @@ public class RedBlock : MonoBehaviour{
         GameObject firework = Instantiate(particles, this.transform.position, Quaternion.identity);
         firework.GetComponent<ParticleSystem>().Play();
 
-        GameObject bulletInstance = Instantiate(block, this.transform.position, Quaternion.identity);      
-        bulletInstance.GetComponent<Rigidbody>().AddForce(0.0f, 0.0f, -1.5f, ForceMode.Impulse);
+        randomDrop = Random.Range(1, 20);
+
+        if (randomDrop==19) {
+            GameObject bulletInstance = Instantiate(block, this.transform.position, Quaternion.identity);
+            bulletInstance.GetComponent<Rigidbody>().AddForce(0.0f, 0.0f, -1.5f, ForceMode.Impulse);
+        }
+        
        
 
 

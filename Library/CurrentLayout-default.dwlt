@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 678, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 65
+  controlID: 14
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 66
+  controlID: 15
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 221}
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 67
+  controlID: 16
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -302,9 +302,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: f8390000
-      m_LastClickedID: 14840
-      m_ExpandedIDs: e0f7ffff
+      m_SelectedIDs: fa360000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 6efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -357,16 +357,16 @@ MonoBehaviour:
   m_ShowContextualTools: 0
   m_WindowGUID: b18add1e7b05c3544bc07bcb10cfb8cf
   m_Gizmos: 1
-  m_SceneIsLit: 0
+  m_SceneIsLit: 1
   m_SceneLighting: 1
   m_2DMode: 0
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -7.4256845, y: -5.0902553, z: 11.676726}
+    m_Target: {x: -3.671778, y: -10.435472, z: 19.362984}
     speed: 2
-    m_Value: {x: -7.4256845, y: -5.0902553, z: 11.676726}
+    m_Value: {x: -3.671778, y: -10.435472, z: 19.362984}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -379,7 +379,7 @@ MonoBehaviour:
   m_SceneViewState:
     showFog: 1
     showMaterialUpdate: 0
-    showSkybox: 0
+    showSkybox: 1
     showFlares: 1
     showImageEffects: 1
     showParticleSystems: 1
@@ -412,13 +412,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.14258066, y: 0.415367, z: -0.06609871, w: -0.8959802}
+    m_Target: {x: -0.27125895, y: 0.027988523, z: -0.007947003, w: -0.96210617}
     speed: 2
-    m_Value: {x: -0.14258005, y: 0.41536522, z: -0.06609843, w: -0.8959763}
+    m_Value: {x: -0.27124864, y: 0.02798746, z: -0.007946701, w: -0.9620696}
   m_Size:
-    m_Target: 14.467446
+    m_Target: 33.39029
     speed: 2
-    m_Value: 14.467446
+    m_Value: 33.39029
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -757,4 +757,4 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 1245
+  m_LastVerticalScrollValue: 170

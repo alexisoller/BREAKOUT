@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\ButtonManager.cs" />
     <Compile Include="Assets\Scripts\FollowDamping.cs" />
     <Compile Include="Assets\Scripts\LevelObject.cs" />
+    <Compile Include="Assets\Scripts\NPC_Paddle_Move.cs" />
     <Compile Include="Assets\Scripts\Paddle.cs" />
     <Compile Include="Assets\Scripts\RedBlock.cs" />
     <Compile Include="Assets\Scripts\YellowBlock.cs" />
