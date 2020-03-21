@@ -55,6 +55,9 @@ public class ButtonManager : MonoBehaviour
         SceneManager.LoadScene(sceneName);
  
     }
-
+    public void ExitToMenu()  {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("menu_ini");
+    }
 
 }

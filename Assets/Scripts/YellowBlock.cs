@@ -40,6 +40,7 @@ public class YellowBlock : MonoBehaviour{
             }
 
             AudioSource.PlayClipAtPoint(audio, this.gameObject.transform.position);
+            Destroy(firework, 6);//destroy object after 6 seconds because its a particle sistem 
             Destroy(gameObject);
             LevelManager.numInitialBlocks--;
         }

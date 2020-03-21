@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\YellowBlock.cs" />
     <Compile Include="Assets\Scripts\drop.cs" />
     <Compile Include="Assets\Scripts\menu_ini.cs" />
+    <Compile Include="Assets\Scripts\rotateGO_Menu.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Alexis/Desktop/breakouyt/BREAKOUT/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

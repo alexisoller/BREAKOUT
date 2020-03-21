@@ -34,8 +34,9 @@ public class RedBlock : MonoBehaviour{
 
 
         AudioSource.PlayClipAtPoint(audio, this.gameObject.transform.position);
-        
-        
+
+        Destroy(firework,6);
+
         Destroy(gameObject);
         LevelManager.numInitialBlocks--;
     }
