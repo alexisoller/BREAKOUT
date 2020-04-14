@@ -2,17 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class drop : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+public class drop : MonoBehaviour{
+    
+    //class to 'kill 'the drop (live)
+    void Start(){
+      
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+   
+    void Update(){
         
     }
     

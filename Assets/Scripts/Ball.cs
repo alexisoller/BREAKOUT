@@ -4,24 +4,34 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+/*
+ * class to determinate the movement of the ball
+ * 
+*/
 public class Ball : MonoBehaviour{
     public AudioClip audio;
+
+    //info lives of ball
     public Text TXnumber_of_lives;
     public int lives = 3;
 
+    //movement of the ball
     private const float speedIncrement = 0.5f;
     private const float speedIncrementRate = 15.0f;
-    // Use this for initialization
+    
     void Start(){
         TXnumber_of_lives.text = lives.ToString();
         RestartBall();
         StartCoroutine(IncreaseSpeed());
     }
-    // Update is called once per frame
+    
     void Update()
     {
     }
-    void OnCollisionEnter(Collision collision)   {
+
+
+
+    void OnCollisionEnter(Collision collision)   {//capture the colision to know when the ball is dead
 
         if (collision.gameObject.tag == "Die") { 
         lives--;
@@ -29,7 +39,9 @@ public class Ball : MonoBehaviour{
         RestartBall();
         }
     }
-    void RestartBall(){
+
+
+    void RestartBall(){//restart the ball on initial position
 
         if (lives == 0) {
             SceneManager.LoadScene("END");
@@ -41,14 +53,13 @@ public class Ball : MonoBehaviour{
 
     }
 
-    public void oneup() {
+    public void oneup(){//add one life when the drop is taken
         lives++;
         TXnumber_of_lives.text = lives.ToString();
         AudioSource.PlayClipAtPoint(audio, this.gameObject.transform.position);
     }
 
-    IEnumerator IncreaseSpeed()
-    {
+    IEnumerator IncreaseSpeed(){
         while (true)
         {
             GetComponent<Rigidbody>().AddForce(GetComponent<Rigidbody>().velocity.normalized * speedIncrement, ForceMode.Impulse);

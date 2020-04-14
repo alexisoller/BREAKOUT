@@ -4,9 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class ButtonManager : MonoBehaviour
-{
-    // Start is called before the first frame update
+public class ButtonManager : MonoBehaviour{
+    
+    //class to control the manu ingame pressing 'esc'
+
     Scene m_Scene;
     string sceneName;
 
@@ -15,8 +16,7 @@ public class ButtonManager : MonoBehaviour
     float startingTime = 15f;
 
 
-    void Start()
-    {
+    void Start(){
         m_Scene = SceneManager.GetActiveScene();
         sceneName = m_Scene.name;
         cv = GameObject.Find("menu").GetComponent<Canvas>();
@@ -24,9 +24,7 @@ public class ButtonManager : MonoBehaviour
     }
 
 
-    void Update()
-    {
-
+    void Update() {
         if (Input.GetKeyDown(KeyCode.Escape)){
             
             if (Time.timeScale == 0){
@@ -41,20 +39,19 @@ public class ButtonManager : MonoBehaviour
 
     }
 
+    //menu button actions
 
-    public void buttonResume()
-    {
+    public void buttonResume() {
         Time.timeScale = 1;
         cv.enabled = false;
     }
-    public void buttonRestart()
-    {
-        //LevelManager.numInitialBlocks = 0;
+
+    public void buttonRestart(){
         Time.timeScale = 1;
         cv.enabled = false;
         SceneManager.LoadScene(sceneName);
- 
     }
+
     public void ExitToMenu()  {
         Time.timeScale = 1;
         SceneManager.LoadScene("menu_ini");

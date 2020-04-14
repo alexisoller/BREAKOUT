@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class FollowDamping : MonoBehaviour{
-
+    /*
+     * class to follow the ball if we want( dont used on this game)
+     */
     public GameObject target;
     public float damping = 0.5f;
     Vector3 offset;
